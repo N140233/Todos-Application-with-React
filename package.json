@@ -1,0 +1,23 @@
+{
+  "name": "learn_react",
+  "version": "0.0.1",
+  "description": "Learn React",
+  "main": "./index.js",
+  "scripts": {
+    "start": "webpack -w"
+  },
+  "author": "Kishore <kishore.iiitn@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^3.1.0",
+    "typescript": "^2.5.3",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "@types/react": "^16.0.36",
+    "@types/react-dom": "^16.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "source-map-loader": "^0.2.3"
+  }
+}
