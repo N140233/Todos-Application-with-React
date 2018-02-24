@@ -1,0 +1,227 @@
+/* line 5, /home/surya/Desktop/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, /home/surya/Desktop/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, /home/surya/Desktop/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, /home/surya/Desktop/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, /home/surya/Desktop/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, /home/surya/Desktop/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+
+/* line 103, /home/surya/Desktop/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, /home/surya/Desktop/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, /home/surya/Desktop/Scout-App/bower_components/compass-mixins/lib/compass/reset/_utilities.scss */
+elements-of-type(html5-block) {
+  display: block;
+}
+
+/* line 3, /home/surya/Desktop/todos Application/saas/index.scss */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 11, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos {
+  background-color: azure;
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid black;
+}
+
+/* line 20, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .header {
+  text-align: center;
+  font-weight: 900;
+  padding: 10px;
+  background-color: #165757;
+}
+
+/* line 27, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .body {
+  flex-grow: 1;
+  overflow: auto;
+}
+
+/* line 30, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .body > .input {
+  padding: 10px;
+  width: 100%;
+  font-weight: 900;
+  color: black;
+  margin-top: 5px;
+}
+
+/* line 38, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .body > .todo {
+  background-color: whitesmoke;
+  display: flex;
+  margin-top: 5px;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* line 47, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .body > .todo > .todo {
+  word-break: break-all;
+  flex-grow: 1;
+  font-weight: 900;
+  color: black;
+  text-align: left;
+  font-feature-settings: "vatu";
+  font-size: 25px;
+}
+
+/* line 56, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .body > .todo > .delete, .todos > .body > .todo > .toggle {
+  background-color: #165757;
+  color: #fdf9f9;
+  border: opx;
+  margin-left: 2px;
+  max-height: 25px;
+}
+
+/* line 66, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer {
+  margin-top: 5px;
+  display: flex;
+  background-color: #165757;
+  font-weight: 900;
+}
+
+/* line 72, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer > .all {
+  box-sizing: border-box;
+  background-color: #165757;
+  flex-grow: 1;
+  border: 1px solid black;
+  margin: auto;
+  padding: 10px;
+}
+
+/* line 79, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer > .all:hover {
+  background-color: #0b3333;
+  cursor: pointer;
+}
+
+/* line 83, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer > .all > span {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  background-color: whitesmoke;
+}
+
+/* line 93, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer > .active {
+  background-color: #165757;
+  flex-grow: 1;
+  border: 1px solid black;
+  margin: auto;
+  padding: 10px;
+}
+
+/* line 99, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer > .active:hover {
+  background-color: #0b3333;
+  cursor: pointer;
+}
+
+/* line 102, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer > .active > span {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  background-color: whitesmoke;
+}
+
+/* line 113, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer > .completed {
+  background-color: #165757;
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+/* line 118, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer > .completed:hover {
+  background-color: #0b3333;
+  cursor: pointer;
+}
+
+/* line 122, /home/surya/Desktop/todos Application/saas/index.scss */
+.todos > .footer > .completed > span {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 2px;
+  background-color: whitesmoke;
+}
+
+/*# sourceMappingURL=../bundle/index.map */
