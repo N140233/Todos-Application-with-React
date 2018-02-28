@@ -11,35 +11,31 @@ interface IState {
 		todo : string
 		active : boolean
 	}[]
-
 }
 
 class Todos extends React.Component<{},IState> {
 	constructor(props:any, context : any) {
 		super(props,context);
-
 		this.state = {
 			state : "all",
 			todos : []
 		}
-
 	}
 	addTodo(text:string) {
 		this.setState( {
 			todos :[
-				
 				{
 					id:g_id++,
 					todo : text,
 					active : true
 				},
 				...this.state.todos
-			],state : "all",
+			]
 		})
 	}
 	delTodo(id:number) {
 		this.setState( {
-			todos : this.state.todos.filter((todo)=>todo.id!=id),
+			todos : this.state.todos.filter((todo)=>todo.id!=id)
 		})
 	}
 	toggleTodo(id:number) {
@@ -50,11 +46,9 @@ class Todos extends React.Component<{},IState> {
 						...todo,
 						active: todo.active==true?false:true
 					}
-
 				}
 				return todo;
-			})
-			
+			})			
 		})
 	}
 	deleteAll() {
@@ -82,16 +76,6 @@ class Todos extends React.Component<{},IState> {
 
 		}
 
-	}
-	toggleState(opt:string) {
-		if(opt=="all")
-			return "todosAll";
-		else if(opt=="active")
-			return "todosActive";
-		else 
-			return "todosCompleted"
-
-		
 	}
 	render() {
 			let all=0,active=0,completed=0;
